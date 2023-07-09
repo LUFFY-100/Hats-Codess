@@ -1,6 +1,6 @@
 # Hat Codes Kali Luinx Course 
 
-git https://github.com/LUFFY-100/Hats-Codess.git
+git clone https://github.com/LUFFY-100/Hats-Codess.git
 
 cd Hats-Codess
 
