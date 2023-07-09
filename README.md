@@ -6,4 +6,4 @@ cd Hats-Codess
 
 pip3 install -r requirements.txt or python3 install requirements.txt
 
-python3 Hats_Infp.py
+ python3 Hats_Info.py
