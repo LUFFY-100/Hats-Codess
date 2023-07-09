@@ -5,10 +5,6 @@ import colorama
 
 
 
-import colored 
-b = colorama.RESET
-d = colorama.RESET
-w = colored('#400078')
 
 
 def clear():
@@ -17,10 +13,10 @@ def clear():
 
 
 
-print(f"{d}Welcome To Discord Token Info")
+print(f"Welcome To Discord Token Info")
 print("")
 request = requests.Session()
-token = input(f"{w}[{d}Enter Token{w}] : {d}")
+token = input(f"[Enter Token] : ")
 headers = {
     'Authorization': token,
     'Content-Type': 'application/json',
@@ -29,7 +25,7 @@ headers = {
 
 
 print(f'''
- {w}[{d}1{w}] {d}Token Info    , {w}[{d}2{w}] {d}Exit      
+ [1] Token Info    , [2] Exit      
  
 ''')
 
@@ -52,7 +48,7 @@ def tokeninfo():
 
 
 def startmenu():
-    keywrd = input(f"{w}[{d}Command{w}] :{d} ")
+    keywrd = input(f"Command [] : ")
     if keywrd == "2":
         print("Bye !")
         exit()
@@ -62,7 +58,7 @@ def startmenu():
         tokeninfo()
         startmenu()
     else:
-        print(f" {w}[{colorama.RED}!{w}] {colorama.RED}Command Not Found !")
+        print(f" [!] Command Not Found !")
         startmenu()
 
 
