@@ -1,14 +1,14 @@
 import json
 import requests
 import os
-from colorama import Fore
+import colorama
 
 
 
-from colored import fg
-b = Fore.RESET
-d = Fore.RESET
-w = fg('#400078')
+import colored 
+b = colorama.RESET
+d = colorama.RESET
+w = colored('#400078')
 
 
 def clear():
@@ -62,7 +62,7 @@ def startmenu():
         tokeninfo()
         startmenu()
     else:
-        print(f" {w}[{Fore.RED}!{w}] {Fore.RED}Command Not Found !")
+        print(f" {w}[{colorama.RED}!{w}] {colorama.RED}Command Not Found !")
         startmenu()
 
 
